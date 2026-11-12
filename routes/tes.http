@@ -1,0 +1,29 @@
+### 1. Tampil semua
+GET http://localhost:3000/api/mahasiswa
+
+### 2. Tambah data
+POST http://localhost:3000/api/mahasiswa
+Content-Type: application/json
+
+{
+  "nim": "2026003",
+  "nama": "Citra",
+  "prodi": "Teknik Informatika"
+}
+
+### 3. Detail by ID
+GET http://localhost:3000/api/mahasiswa/1
+
+### 4. Ubah data
+PUT http://localhost:3000/api/mahasiswa/1
+Content-Type: application/json
+
+{
+  "nama": "Andi Baru"
+}
+
+### 5. Hapus data
+DELETE http://localhost:3000/api/mahasiswa/2
+
+### 6. Data tidak ditemukan
+GET http://localhost:3000/api/mahasiswa/99
